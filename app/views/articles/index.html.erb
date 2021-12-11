@@ -1,0 +1,30 @@
+<h1>Articles</h1>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+     <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "New Articles", new_article_path %>
+<h1>Tìm hiểu các file trong rails </h1>
+<p>-	App/ : là nơi chứa mô hình MVC và cũng là nơi chứa code nhiều nhất của trương trình.</p>
+<p>-	Bin/ : là nơi chứa các trương trình liên quan để chạy chung với rails </p>
+<p>-	Config/ : là nơi chứa tất cả các config. Của rails </p>
+<p>-	Config.ru : là một Ruby server , dùng để khởi động ứng dụng</p>
+<p>-	Db/ : là nơi chứa code làm việc với database</p>
+<p>-	Gemfile : là nơi liệt kê tất cả các thư viện của ruby có sử dụng trong ứng dụng</p> 
+<p>-	Gemfile.lock : là nơi quản lí các version của gem </p>
+<p>-	Lib/ : là nơi cài các thư viện mới để mở rộng tính năng của app</p>
+<p>-	Log/ : là nơi lưu lại các hoạt động của hệ thống bao gồm truy vấn dữ liệu, request đến server, và lỗi.</p>
+<p>-	Package.json : là nơi thiết lập các phụ thuộc NPM cho các mô-đun Javascript, các mô-đun này sẽ được đóng gói với Webpacker.</p>
+<p>-	Public/ : là nơi chứa những file có thể truy cập trực tiếp vào được mà không cần vào controller , cũng là nơi chưa favicon </p>
+<p>-	Rakefile : là nơi thiết lập các câu lệnh nhằm mục đích chạy các ruby code bên trong các Makefile.</p>
+<p>-	Readme.md : là nơi chứa những thông tin quan trọng và cái vấn đề liên quan tới chương trình của bạn khi up lên github sẽ giúp người khác hiểu hơn về chương trình của bạn .</p>
+<p>-	Storage/ : là nơi cho phép Rails giao tiếp trực tiếp với các dịch vụ đám mây như AWS hoặc Google</p>
+<p>-	Test/ : là folder hỗ trợ cho việc kiểm thử trương trình của mình .</p>
+<p>-	Tmp/ : Rails sử dụng thư mục này để chứa các tệp tạm thời cho quá trình xử lý trung gian.</p>
+<p>-	Vendor : là nơi chứa các thư viện được cung cấp bởi các nhà cung cấp bên thứ ba (chẳng hạn như thư viện bảo mật hoặc tiện ích cơ sở dữ liệu ngoài bản phân phối Rails cơ bản) tại đây.</p>
+<p>-	.Gitignore : là nơi kiểm soát phiên bản của bạn sẽ bỏ qua bất kỳ tệp hoặc thư mục nào bạn chỉ định tại đây.	</p>
+<p>-	.ruby-version : là nơi chứa version ruby của dự án mà mình đang sử dụng</p> 
+
